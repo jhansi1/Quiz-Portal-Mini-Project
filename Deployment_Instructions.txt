@@ -1,0 +1,25 @@
+***Steps to create python virtual environment:***
+-----------------------------
+
+1) To create a new virual env for the new folder: Quiz-Portal-Mini-Project/, run the below command
+	$virtualenv Quiz-Portal-Mini-Project/ 
+2) run: $source Quiz-Portal-Mini-Project/Scripts/activate
+3) To check if it's selecting the python.exe from inside virtual env,
+   run: $which python 
+4) cd Quiz-Portal-Mini-Project/
+5) run: $pip install Flask
+6) run: $pip list --check if the following package is available in the list now.
+	Flask              2.0.1
+7) To deactivate virtual env: run $deactivate 
+8) The next time you want to activate this virtualenv, simply run: source Quiz-Portal-Mini-Project/Scripts/activate
+
+***Order of code Execution:***
+-----------------------------
+
+9) Execute the quiz_app_setup.py file to create the Database and tables.
+	$python quiz_app_setup.py
+10) Uncomment the commented lines at the end of the quiz_creator.py file. Execute the file for one time and comment after use.
+	$python quiz_creator.py
+11) Execute the quiz_app.py file
+	$python quiz_app.py
+Make sure the server is up and running in your local machine. And you're all ready to send HTTP requests via Postman( I used postman tool to test API's)
